@@ -1,11 +1,5 @@
 #!/bin/sh
 # set -e
-plat=`uname -s`
-if [ $plat = "Linux" ]
-then
-    apt-get install git vim curl zsh ctags
-elif [ $plat = "Darwin" ]
-then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew install autojump ctags mysql p7zip unrar zsh cmake wget caskroom/cask/brew-cask
     brew linkapps
@@ -29,9 +23,6 @@ then
     brew cask install google-chrome google-drive googleappenginelauncher
     #其它
     brew cask install fingerlock shuttle mactex istat-menus
-else
-    echo "error"
-fi
 
 curl -L http://install.ohmyz.sh | sh
 curl -L https://raw.githubusercontent.com/zghember/vimpro/master/install.sh | sh
