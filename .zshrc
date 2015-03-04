@@ -45,7 +45,7 @@ ZSH_THEME="jispwoso"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn git-flow osx vagrant git-flow brew brew-cask pip gem rails rbenv pyenv)
+plugins=(git svn git-flow osx vagrant brew brew-cask pip gem rails rbenv pyenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -80,5 +80,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
+export PYENV_ROOT=/usr/local/opt/pyenv
+export RBENV_ROOT=/usr/local/var/rbenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
