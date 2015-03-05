@@ -45,7 +45,7 @@ ZSH_THEME="jispwoso"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git svn git-flow osx vagrant git-flow brew brew-cask pip gem rails rbenv pyenv)
+plugins=(git svn git-flow osx vagrant brew brew-cask pip gem rails rbenv pyenv)
 
 source $ZSH/oh-my-zsh.sh
 
