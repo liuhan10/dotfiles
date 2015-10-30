@@ -93,6 +93,7 @@ create_symlinks() {
     lnif "$endpath/.vimrc"              "$HOME/.vimrc"
     lnif "$endpath/.vim"                "$HOME/.vim"
     lnif "$endpath/.zshrc"                "$HOME/.zshrc"
+    lnif "$endpath/.gemrc"                "$HOME/.gemrc"
 }
 
 setup_vundle() {
